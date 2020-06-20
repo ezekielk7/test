@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.wrapper > * {
+  margin-bottom: 15px;
+}
+
+.a,
+.h {
+  flex-basis: 66%;
+}
+
+.c {
+  flex-basis: 100%;
+}
+
+.b,
+.d,
+.e,
+.f,
+.g {
+  flex-basis: 32%;
+}
+
+div {
+  height: 80px;
+}
+
+.a {
+  background-color: violet;
+}
+
+.b {
+  background-color: blue;
+}
+
+.c {
+  background-color: green;
+}
+
+.d {
+  background-color: yellow;
+}
+
+.e {
+  background-color: orange;
+}
+
+.f {
+  background-color: red;
+}
+
+.g {
+  background-color: cyan;
+}
+
+.h {
+  background-color: indigo;
+}

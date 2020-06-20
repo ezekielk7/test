@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+  <body>
+    <!-- <p>
+      welcome to my favourite website which is movie filled called
+      <a href="http://yts.am" target="_blank">YTS.am</a>
+    </p>
+    <blockquote>
+      <p><strong>this is the best torrent website for HD movies</strong></p>
+      <cite>
+        <em>DUH!</em>
+        Me Obviously</cite
+      >
+    </blockquote> -->
+    <div class="wrapper">
+      <div class="a">a</div>
+      <div class="b">b</div>
+      <div class="c">c</div>
+      <div class="d">d</div>
+      <div class="e">e</div>
+      <div class="f">f</div>
+      <div class="g">g</div>
+      <div class="h">h</div>
+      <button>show c</button>
+    </div>
+    <script>
+      var btn = document.querySelector("button");
+      var divE = document.querySelector(".e");
+      const hideC = "hide c";
+      const showC = "show c";
+      var showingC = false;
+
+      btn.addEventListener("click", function (e) {
+        divE.classList.toggle("show-c");
+        if (showingC) {
+          btn.innerText = showC;
+        } else {
+          btn.innerText = hideC;
+        }
+        showingC = !showingC;
+      });
+    </script>
+  </body>
+</html>

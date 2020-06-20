@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  font-size: 3rem;
+  color: white;
+}
+
+div {
+  height: 80px;
+}
+
+.a {
+  background-color: violet;
+}
+
+.b {
+  background-color: blue;
+}
+
+.c {
+  background-color: green;
+}
+
+.d {
+  background-color: yellow;
+}
+
+.e {
+  background-color: orange;
+}
+
+.f {
+  background-color: red;
+}
+
+.g {
+  background-color: cyan;
+}
+
+.h {
+  background-color: indigo;
+}
+
+.wrapper {
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "a a b"
+    "c c c"
+    "d e f"
+    "g h h"
+    ". t .";
+}
+
+.a {
+  grid-area: a;
+}
+
+.c {
+  grid-area: c;
+}
+
+.h {
+  grid-area: h;
+}
+
+.b {
+  grid-area: d;
+}
+
+.g {
+  grid-area: f;
+}
+
+.e {
+  grid-area: c;
+}
+
+button {
+  grid-area: t;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.show-c {
+  display: none;
+}
